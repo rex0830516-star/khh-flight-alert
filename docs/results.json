@@ -1,1 +1,7 @@
-{"updated":"","limit":7500,"currency":"TWD","weekends":0,"results":[]}
+{
+ "updated": "2026-11-13 16:38",
+ "limit": 7500,
+ "currency": "TWD",
+ "weekends": 60,
+ "results": []
+}
