@@ -49,6 +49,8 @@ GF_DESTINATIONS = os.environ.get(
     "NRT,HND,KIX,FUK,OKA,NGO,KMJ,CTS,ICN,PUS,TAE,PVG,XMN,SZX,CAN,HGH,NKG",
 ).split(",")
 
+GF_TIME_BUDGET_MIN = int(os.environ.get("GF_TIME_BUDGET_MIN", "150"))
+
 API = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates"
 AIRPORTS_URL = "https://api.travelpayouts.com/data/en/airports.json"
 CITIES_URL = "https://api.travelpayouts.com/data/en/cities.json"
@@ -314,30 +316,56 @@ def gf_query(dep, ret, dest):
         trip="round-trip",
         seat="economy",
         passengers=Passengers(adults=1),
-        fetch_mode="fallback",
+        fetch_mode="common",   # 直接查 Google；不走需要 token 的備援伺服器
     )
     return list(getattr(result, "flights", []) or [])
+
+
+NO_RESULT_HINTS = ("no flights", "no result", "not found", "list index out of range", "nonetype")
+
+
+def is_no_result(err):
+    s = str(err).lower()
+    return any(h in s for h in NO_RESULT_HINTS)
 
 
 def scan_google(wk, query_fn=gf_query, fx=None):
     fx = fx or load_fx()
     calls = errors = streak = 0
+    deadline = time.time() + GF_TIME_BUDGET_MIN * 60
     for dep, ret in wk:
         for dest in GF_DESTINATIONS:
+            if time.time() > deadline:
+                print(f"[info] 已達時間上限 {GF_TIME_BUDGET_MIN} 分鐘，先存檔結束（查到 {dep}）", file=sys.stderr)
+                print(f"Google Flights 查詢 {calls} 次，失敗 {errors} 次")
+                return
             calls += 1
-            try:
-                flights = query_fn(dep, ret, dest)
-                streak = 0
-            except Exception as e:  # noqa: BLE001
-                errors += 1
-                streak += 1
-                msg = str(e).splitlines()[0][:120] if str(e) else type(e).__name__
-                print(f"[warn] Google {dep} {dest}: {msg}", file=sys.stderr)
-                if streak >= 20:
-                    print("[error] 連續 20 次失敗（可能被 Google 暫時擋下），提前結束本次 Google 掃描", file=sys.stderr)
-                    print(f"Google Flights 查詢 {calls} 次，失敗 {errors} 次")
-                    return
-                flights = []
+            flights = []
+            for attempt in range(2):          # 失敗會休息後重試一次
+                try:
+                    flights = query_fn(dep, ret, dest)
+                    streak = 0
+                    break
+                except Exception as e:  # noqa: BLE001
+                    if is_no_result(e):        # 該航線當天沒有直飛 → 不算失敗
+                        streak = 0
+                        break
+                    msg = str(e).splitlines()[0][:120] if str(e) else type(e).__name__
+                    if attempt == 0:
+                        if query_fn is gf_query:
+                            time.sleep(random.uniform(10, 20))
+                        continue
+                    errors += 1
+                    streak += 1
+                    print(f"[warn] Google {dep} {dest}: {msg}", file=sys.stderr)
+            if streak in (10, 20):              # 連續失敗 → 長休息讓 Google 解除限速
+                print(f"[info] 連續 {streak} 次失敗，休息 5 分鐘", file=sys.stderr)
+                if query_fn is gf_query:
+                    time.sleep(300)
+            if streak >= 30:
+                print("[error] 連續 30 次失敗（被 Google 擋下），提前結束本次 Google 掃描", file=sys.stderr)
+                print(f"Google Flights 查詢 {calls} 次，失敗 {errors} 次")
+                return
             for f in flights:
                 stops = getattr(f, "stops", None)
                 if stops not in (0, "0", None):
@@ -361,7 +389,7 @@ def scan_google(wk, query_fn=gf_query, fx=None):
                     "url": f"https://www.google.com/travel/flights?q={q}&curr=TWD&hl=zh-TW",
                 }
             if query_fn is gf_query:
-                time.sleep(random.uniform(1.0, 2.5))
+                time.sleep(random.uniform(3.0, 6.0))
     print(f"Google Flights 查詢 {calls} 次，失敗 {errors} 次")
 
 
