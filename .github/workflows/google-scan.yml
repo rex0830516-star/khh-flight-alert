@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: 安裝 fast-flights
-        run: pip install "fast-flights>=2,<3"
+        run: pip install "fast-flights>=2,<3" "primp<0.11"
       - name: 查詢 Google Flights
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
