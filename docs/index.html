@@ -52,7 +52,7 @@ function render(){
       <div class="top"><span class="route">KHH ⇄ ${esc(r.dest)}<span class="tag">${esc(NAMES[r.country]||r.country)}</span></span>
       <span class="price">${r.price.toLocaleString()}</span></div>
       <div class="row">去 ${esc(r.dep)}（五）· ${esc(r.flight)}</div>
-      <div class="row">回 ${esc(r.ret)}（日）</div>
+      <div class="row">回 ${esc(r.ret)}（日）<span class="tag">${r.source==="google"?"Google Flights":"Aviasales"}</span></div>
     </a>`).join("");
 }
 document.querySelectorAll(".bar button").forEach(b=>b.onclick=()=>{
