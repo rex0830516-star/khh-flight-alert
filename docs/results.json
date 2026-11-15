@@ -1,24 +1,13 @@
 {
- "updated": "2026-11-16 02:51",
+ "updated": "2026-11-16 04:18",
  "limit": 7500,
  "currency": "TWD",
  "weekends": 59,
  "results": [
   {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 6058,
-   "dep": "2027-01-08 18:15",
-   "ret": "2027-01-10 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-01-08%20through%202027-01-10%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
    "dest": "PUS",
    "country": "KR",
-   "price": 6255,
+   "price": 6257,
    "dep": "2026-11-27 17:05",
    "ret": "2026-11-29 ",
    "airline": "Jeju Air",
@@ -29,7 +18,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 6617,
+   "price": 6619,
    "dep": "2027-02-19 18:15",
    "ret": "2027-02-21 ",
    "airline": "Spring",
@@ -38,31 +27,9 @@
    "source": "google"
   },
   {
-   "dest": "OKA",
-   "country": "JP",
-   "price": 7012,
-   "dep": "2026-12-11 14:35",
-   "ret": "2026-12-13 ",
-   "airline": "Jetstar",
-   "flight": "Jetstar",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202026-12-11%20through%202026-12-13%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
    "dest": "PVG",
    "country": "CN",
-   "price": 7144,
-   "dep": "2027-02-26 18:15",
-   "ret": "2027-02-28 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-02-26%20through%202027-02-28%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 7144,
+   "price": 7146,
    "dep": "2027-05-14 18:15",
    "ret": "2027-05-16 ",
    "airline": "Spring",
@@ -73,7 +40,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7144,
+   "price": 7146,
    "dep": "2027-05-21 18:15",
    "ret": "2027-05-23 ",
    "airline": "Spring",
@@ -84,7 +51,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7144,
+   "price": 7146,
    "dep": "2027-08-27 18:15",
    "ret": "2027-08-29 ",
    "airline": "Spring",
@@ -95,7 +62,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7144,
+   "price": 7146,
    "dep": "2027-09-03 18:15",
    "ret": "2027-09-05 ",
    "airline": "Spring",
@@ -104,9 +71,20 @@
    "source": "google"
   },
   {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7146,
+   "dep": "2027-09-10 18:15",
+   "ret": "2027-09-12 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-09-10%20through%202027-09-12%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
    "dest": "OKA",
    "country": "JP",
-   "price": 7276,
+   "price": 7277,
    "dep": "2026-12-04 09:45",
    "ret": "2026-12-06 ",
    "airline": "Tigerair Taiwan",
