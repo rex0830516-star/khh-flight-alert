@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 01:05",
+ "updated": "2026-11-21 03:05",
  "limit": 7500,
  "currency": "TWD",
  "weekends": 58,
@@ -18,12 +18,12 @@
   {
    "dest": "OKA",
    "country": "JP",
-   "price": 7015,
+   "price": 7019,
    "dep": "2027-01-15 14:35",
    "ret": "2027-01-17 12:40",
    "airline": "GK",
    "flight": "GK098",
-   "link": "https://www.aviasales.com/search/KHH1501OKA17011?t=GK18000237001800033300000100KHHOKA18001896001800192900000115OKAKHH_ce81b4f4d9739cebbfcc63e462988367_17429&search_date=20112026&expected_price_uuid=01a1f9af-643a-8030-a4ac-5299e1afb740&static_fare_key=TY%7CP1_JW%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K4wsDVnj3k3a3sQnRck0jQ&expected_price_source=share&expected_price_currency=twd&expected_price=7015",
+   "link": "https://www.aviasales.com/search/KHH1501OKA17011?t=GK18000237001800033300000100KHHOKA18001896001800192900000115OKAKHH_ce81b4f4d9739cebbfcc63e462988367_17429&search_date=20112026&expected_price_uuid=01a1f9af-643a-8030-a4ac-5299e1afb740&static_fare_key=TY%7CP1_JW%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K4wsDVnj3k3a3sQnRck0jQ&expected_price_source=share&expected_price_currency=twd&expected_price=7019",
    "source": "aviasales"
   },
   {
