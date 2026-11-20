@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 03:05",
+ "updated": "2026-11-21 04:34",
  "limit": 7500,
  "currency": "TWD",
  "weekends": 58,
@@ -7,7 +7,29 @@
   {
    "dest": "PUS",
    "country": "KR",
-   "price": 6792,
+   "price": 6531,
+   "dep": "2026-12-04 17:05",
+   "ret": "2026-12-06 ",
+   "airline": "Jeju Air",
+   "flight": "Jeju Air",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PUS%20from%20KHH%20on%202026-12-04%20through%202026-12-06%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 6630,
+   "dep": "2027-02-19 18:15",
+   "ret": "2027-02-21 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-02-19%20through%202027-02-21%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PUS",
+   "country": "KR",
+   "price": 6828,
    "dep": "2026-11-27 17:05",
    "ret": "2026-11-29 ",
    "airline": "Jeju Air",
@@ -29,40 +51,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7122,
-   "dep": "2027-02-26 18:15",
-   "ret": "2027-02-28 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-02-26%20through%202027-02-28%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 7122,
-   "dep": "2027-05-14 18:15",
-   "ret": "2027-05-16 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-05-14%20through%202027-05-16%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 7122,
-   "dep": "2027-05-21 18:15",
-   "ret": "2027-05-23 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-05-21%20through%202027-05-23%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 7122,
+   "price": 7125,
    "dep": "2027-08-27 18:15",
    "ret": "2027-08-29 ",
    "airline": "Spring",
@@ -73,18 +62,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7122,
-   "dep": "2027-09-03 18:15",
-   "ret": "2027-09-05 ",
-   "airline": "Spring",
-   "flight": "Spring",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-09-03%20through%202027-09-05%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "PVG",
-   "country": "CN",
-   "price": 7122,
+   "price": 7125,
    "dep": "2027-09-10 18:15",
    "ret": "2027-09-12 ",
    "airline": "Spring",
@@ -93,14 +71,91 @@
    "source": "google"
   },
   {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7158,
+   "dep": "2027-02-26 18:15",
+   "ret": "2027-02-28 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-02-26%20through%202027-02-28%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7158,
+   "dep": "2027-05-14 18:15",
+   "ret": "2027-05-16 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-05-14%20through%202027-05-16%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7158,
+   "dep": "2027-05-21 18:15",
+   "ret": "2027-05-23 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-05-21%20through%202027-05-23%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7158,
+   "dep": "2027-09-03 18:15",
+   "ret": "2027-09-05 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-09-03%20through%202027-09-05%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
    "dest": "PUS",
    "country": "KR",
-   "price": 7485,
-   "dep": "2026-12-04 15:00",
+   "price": 7224,
+   "dep": "2026-12-18 17:05",
+   "ret": "2026-12-20 ",
+   "airline": "Jeju Air",
+   "flight": "Jeju Air",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PUS%20from%20KHH%20on%202026-12-18%20through%202026-12-20%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "OKA",
+   "country": "JP",
+   "price": 7389,
+   "dep": "2027-01-08 14:35",
+   "ret": "2027-01-10 ",
+   "airline": "Jetstar",
+   "flight": "Jetstar",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202027-01-08%20through%202027-01-10%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "OKA",
+   "country": "JP",
+   "price": 7422,
+   "dep": "2026-12-04 09:45",
    "ret": "2026-12-06 ",
-   "airline": "Air Busan",
-   "flight": "Air Busan",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PUS%20from%20KHH%20on%202026-12-04%20through%202026-12-06%20nonstop&curr=TWD&hl=zh-TW",
+   "airline": "Tigerair Taiwan",
+   "flight": "Tigerair Taiwan",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202026-12-04%20through%202026-12-06%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "OKA",
+   "country": "JP",
+   "price": 7455,
+   "dep": "2027-02-19 14:35",
+   "ret": "2027-02-21 ",
+   "airline": "Jetstar",
+   "flight": "Jetstar",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202027-02-19%20through%202027-02-21%20nonstop&curr=TWD&hl=zh-TW",
    "source": "google"
   }
  ]
