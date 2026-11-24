@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 03:05",
+ "updated": "2026-11-25 04:34",
  "limit": 7500,
  "currency": "TWD",
  "weekends": 58,
@@ -7,7 +7,7 @@
   {
    "dest": "OKA",
    "country": "JP",
-   "price": 6431,
+   "price": 6407,
    "dep": "2027-03-05 14:35",
    "ret": "2027-03-07 ",
    "airline": "Jetstar",
@@ -18,7 +18,7 @@
   {
    "dest": "OKA",
    "country": "JP",
-   "price": 6893,
+   "price": 6834,
    "dep": "2027-01-15 14:35",
    "ret": "2027-01-17 ",
    "airline": "Jetstar",
@@ -29,7 +29,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7157,
+   "price": 7097,
    "dep": "2027-02-26 18:15",
    "ret": "2027-02-28 ",
    "airline": "Spring",
@@ -40,7 +40,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7157,
+   "price": 7097,
    "dep": "2027-03-19 18:15",
    "ret": "2027-03-21 ",
    "airline": "Spring",
@@ -51,7 +51,18 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7157,
+   "price": 7097,
+   "dep": "2027-08-27 18:15",
+   "ret": "2027-08-29 ",
+   "airline": "Spring",
+   "flight": "Spring",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PVG%20from%20KHH%20on%202027-08-27%20through%202027-08-29%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "PVG",
+   "country": "CN",
+   "price": 7097,
    "dep": "2027-09-03 18:15",
    "ret": "2027-09-05 ",
    "airline": "Spring",
@@ -62,7 +73,7 @@
   {
    "dest": "PVG",
    "country": "CN",
-   "price": 7157,
+   "price": 7097,
    "dep": "2027-09-10 18:15",
    "ret": "2027-09-12 ",
    "airline": "Spring",
@@ -73,7 +84,7 @@
   {
    "dest": "ICN",
    "country": "KR",
-   "price": 7190,
+   "price": 7129,
    "dep": "2027-05-07 16:10",
    "ret": "2027-05-09 ",
    "airline": "Trinity Airways",
@@ -84,7 +95,7 @@
   {
    "dest": "ICN",
    "country": "KR",
-   "price": 7190,
+   "price": 7129,
    "dep": "2027-05-14 16:10",
    "ret": "2027-05-16 ",
    "airline": "Trinity Airways",
@@ -95,7 +106,7 @@
   {
    "dest": "ICN",
    "country": "KR",
-   "price": 7190,
+   "price": 7129,
    "dep": "2027-05-21 16:10",
    "ret": "2027-05-23 ",
    "airline": "Trinity Airways",
@@ -104,20 +115,31 @@
    "source": "google"
   },
   {
-   "dest": "PUS",
+   "dest": "ICN",
    "country": "KR",
-   "price": 7454,
-   "dep": "2026-12-04 17:05",
-   "ret": "2026-12-06 ",
-   "airline": "Jeju Air",
-   "flight": "Jeju Air",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20PUS%20from%20KHH%20on%202026-12-04%20through%202026-12-06%20nonstop&curr=TWD&hl=zh-TW",
+   "price": 7129,
+   "dep": "2027-05-28 16:10",
+   "ret": "2027-05-30 ",
+   "airline": "Trinity Airways",
+   "flight": "Trinity Airways",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20ICN%20from%20KHH%20on%202027-05-28%20through%202027-05-30%20nonstop&curr=TWD&hl=zh-TW",
    "source": "google"
   },
   {
    "dest": "OKA",
    "country": "JP",
-   "price": 7454,
+   "price": 7327,
+   "dep": "2027-01-08 14:35",
+   "ret": "2027-01-10 ",
+   "airline": "Jetstar",
+   "flight": "Jetstar",
+   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202027-01-08%20through%202027-01-10%20nonstop&curr=TWD&hl=zh-TW",
+   "source": "google"
+  },
+  {
+   "dest": "OKA",
+   "country": "JP",
+   "price": 7392,
    "dep": "2027-02-19 14:35",
    "ret": "2027-02-21 ",
    "airline": "Jetstar",
