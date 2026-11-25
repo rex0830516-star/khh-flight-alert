@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 04:27",
+ "updated": "2026-11-26 05:03",
  "limit": 7500,
  "currency": "TWD",
  "weekends": 58,
@@ -205,23 +205,23 @@
   {
    "dest": "OKA",
    "country": "JP",
+   "price": 7116,
+   "dep": "2027-01-15 14:35",
+   "ret": "2027-01-17 12:40",
+   "airline": "GK",
+   "flight": "GK098",
+   "link": "https://www.aviasales.com/search/KHH1501OKA17011?t=GK18000237001800033300000100KHHOKA18001896001800192900000115OKAKHH_ce81b4f4d9739cebbfcc63e462988367_17716&search_date=21112026&expected_price_uuid=01a1fbbe-4c27-8040-2204-18f8e60dfdad&static_fare_key=TY%7CP1_JW%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=K4wsDVnj3k3a3sQnRck0jQ&expected_price_source=share&expected_price_currency=twd&expected_price=7116",
+   "source": "aviasales"
+  },
+  {
+   "dest": "OKA",
+   "country": "JP",
    "price": 7345,
    "dep": "2027-01-08 14:35",
    "ret": "2027-01-10 ",
    "airline": "Jetstar",
    "flight": "Jetstar",
    "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202027-01-08%20through%202027-01-10%20nonstop&curr=TWD&hl=zh-TW",
-   "source": "google"
-  },
-  {
-   "dest": "OKA",
-   "country": "JP",
-   "price": 7345,
-   "dep": "2027-01-15 14:35",
-   "ret": "2027-01-17 ",
-   "airline": "Jetstar",
-   "flight": "Jetstar",
-   "link": "https://www.google.com/travel/flights?q=Flights%20to%20OKA%20from%20KHH%20on%202027-01-15%20through%202027-01-17%20nonstop&curr=TWD&hl=zh-TW",
    "source": "google"
   },
   {
